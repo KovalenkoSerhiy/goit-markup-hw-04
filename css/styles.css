@@ -5,6 +5,8 @@
   --light-color: #f4f4fd; /* CLOUD */
   --accent-color: #e7e9fc; /* CORNFLOWER */
   --body-text-color: #434455; /* SLATE */
+  --color-green: #31d0aa; /* GREEN */
+  --light-slate-color: #8E8F99;  /* LIGHT SLATE */
 }
 
 *,
@@ -65,12 +67,11 @@ ul {
 .header .container,
 .benefits ul,
 .work ul,
-.team ul {
+.team .team-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 
 .img {
   display: block;
@@ -131,6 +132,14 @@ ul {
   background-color: var(--darc-color);
   padding-top: 192px;
   padding-bottom: 192px;
+
+  background-image: url("../img/dark-bg.png"), url("../img/hero-bgr.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heder-info {
 }
 
 .hero-title {
@@ -189,7 +198,6 @@ ul {
   padding-bottom: 120px;
 }
 
-
 .work-title {
   font-weight: 600;
   font-size: 36px;
@@ -206,12 +214,13 @@ ul {
 .team {
   background-color: var(--light-color);
   padding-top: 120px;
-  padding-bottom: 120px
+  padding-bottom: 120px;
 }
 
 .team-item {
   background: var(--decoration-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 32px;
 }
@@ -234,22 +243,103 @@ ul {
   letter-spacing: 0.02em;
   color: var(--darc-color);
   margin-top: 32px;
-  margin-bottom: 8px;  
+  margin-bottom: 8px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--body-text-color);  
+  color: var(--body-text-color);
+  margin-bottom: 12px;
 }
+
+.team-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
+  margin: 0 auto;
+}
+
+.team-soc-item {
+}
+
+.team-soc-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+  background-color: var(--primary-brand-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.team-soc-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--light-color);
+}
+
+.customer {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customer-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--darc-color);
+  margin-bottom: 72px;
+}
+
+.customer-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
+  margin: 0 auto;
+}
+
+.customer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--light-slate-color);
+  border-radius: 4px;
+  color: var(--light-slate-color);
+}
+
+
+
+.customer-link:focus,
+.customer-link:hover {
+  color: var(--primary-brand-color);
+  border: 1px solid var(--primary-brand-color);
+  fill: var(--primary-brand-color);
+  
+}
+
+
+
+.customer-logo {
+  width: 104px;
+  height: 56px;
+  fill: currentColor;
+}
+
 
 /* ----- PORTFOLIO ----- */
 
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
-  }
+}
 
 .portfolio-filter {
   justify-content: center;
@@ -298,7 +388,7 @@ ul {
   /* padding-top: 32px;
   padding-bottom: 32px; */
   border: 0.5px solid var(--light-color);
-  border-top: none;  
+  border-top: none;
 }
 .portfolio-title {
   font-weight: 600;
@@ -309,7 +399,7 @@ ul {
   padding-top: 32px;
   padding-left: 16px;
   /* margin-bottom: 8px; */
-  }
+}
 
 .portfolio-text {
   font-size: 16px;
@@ -350,3 +440,39 @@ ul {
   color: var(--accent-color);
   margin-top: 16px;
 }
+
+/* .soc-media {
+  width: 208px;
+  margin-left: 120px;
+  padding: 0;
+}
+
+.soc-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--decoration-color);
+  margin-bottom: 16px;
+}
+
+.footer-soc-list {
+ 
+}
+
+.footer-soc-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-soc-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--light-color);
+} */
