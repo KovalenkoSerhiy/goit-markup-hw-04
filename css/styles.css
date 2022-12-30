@@ -396,13 +396,17 @@ ul {
 }
 
 .portfolio-content li:hover,
-.portfolio-content li:focus{
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.portfolio-content li:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.item-content {  
+.item-content {
   border: 0.5px solid var(--light-color);
   border-top: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 
 .portfolio-title {
@@ -411,18 +415,14 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--darc-color);
-  padding-top: 32px;
-  padding-left: 16px;  
+  margin-bottom: 8px;  
 }
 
 .portfolio-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--body-text-color);
-  padding-top: 8px;
-  padding-left: 16px;
-  padding-bottom: 32px;
+  color: var(--body-text-color);  
 }
 
 /* ----- FOOTER ----- */
@@ -473,7 +473,7 @@ ul {
   color: var(--decoration-color);
   margin-bottom: 16px;
 }
-.footer-soc-list{
+.footer-soc-list {
   display: flex;
   align-items: center;
   justify-content: center;
